@@ -1,0 +1,10 @@
+:root {
+    --primaryBlue: rgb(7, 24, 196);
+    --secondaryBlue: rgb(0, 127, 255);
+    --lightBlue: rgb(102, 178, 255);
+    --darkBlue: rgb(10, 25, 41);
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
