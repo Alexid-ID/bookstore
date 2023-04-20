@@ -1,5 +1,9 @@
 @import url("./Style.css");
 
+header {
+    min-height: 60px;
+}
+
 .logo {
     height: 40px;
 }

@@ -1,200 +1,218 @@
 @import url("./Style.css");
 
 .search__page {
-    min-height: 100vh;
-    background-color: var(--darkBlue);
-    z-index: -2;
+	z-index: -2;
+	background-color: #dedee4;
 }
 
 .search__container {
-    position: relative;
-    height: 60vh;
-    width: 100%;
+	position: relative;
+	height: 60vh;
+	width: 100%;
 }
 
 .search {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    z-index: 4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 4;
 }
 
 .search input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
 }
 
 .search button {
-    background-color: var(--secondaryBlue);
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 10px;
-    cursor: pointer;
+	background-color: var(--secondaryBlue);
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	margin-left: 10px;
+	cursor: pointer;
 }
 
 .search button:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 .search button:active {
-    cursor: default;
+	cursor: default;
 }
 
 .search__container img {
-    height: 60vh;
-    width: 100%;
-    filter: brightness(0.6);
-    position: absolute;
-    top: 0;
-    z-index: 0;
+	height: 60vh;
+	width: 100%;
+	filter: brightness(0.6);
+	position: absolute;
+	top: 0;
+	z-index: 0;
 }
 
-.search__result{
-    z-index: 2;
-    padding: 2rem;
-    background-color: var(--darkBlue);
-
+.search__result {
+	z-index: 2;
+	padding: 2rem;
 }
 
 .book__card {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff7f7;
+	padding-bottom: 1rem;
+	box-sizing: border-box;
+}
+
+.book__card:hover {
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .book__card img {
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
 }
 
 .book__content {
-    padding: 0.4rem;
+	padding: 0.4rem;
 }
 
 .book__content > * {
-    color: var(--secondaryBlue);
-    padding: 0;
-    margin: 0;
+	color: var(--secondaryBlue);
+	padding: 0;
+	margin: 0;
+}
+
+.limit--length {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	margin-top: 4px;
+	min-height: 24px;
 }
 
 .book__title {
-    
-    font-size: 1rem;
-    font-weight: 600;
+	font-size: 1rem;
+	font-weight: 600;
 }
 
 .book__author {
-    font-size: 0.8rem;
+	font-size: 0.8rem;
+	margin: 0;
 }
 
 .book__date {
-    font-size: 0.7rem;
+	font-size: 0.7rem;
+	padding: 0.4rem 0;
 }
 
 /* css for modal box */
-.overlay{
-    min-height: 100vh;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #2020200f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.overlay {
+	min-height: 100vh;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #2020200f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 12;
 }
-.overlay-inner{
-    background: white;
-    width: 700px;
-    height: 550px;
-    padding: 1.5rem;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    font-size: 1.3rem;
+.overlay-inner {
+	background: white;
+	width: 700px;
+	height: 550px;
+	padding: 1.5rem;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: 1.3rem;
+	overflow-y: auto;
 }
-.overlay-inner .close{
-    position: absolute;
-    top:1rem;
-    right: 1rem;
-    outline: none;
-    border: none;
-    font-size: 24px;
-    background-color: transparent;
+.overlay-inner .close {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	outline: none;
+	border: none;
+	font-size: 24px;
+	background-color: transparent;
 }
-.overlay-inner .inner-box{
-    margin-top: 30px;
-    display: flex;
+.overlay-inner .inner-box {
+	margin-top: 30px;
+	display: flex;
 }
-.overlay-inner .inner-box img{
-    margin-right: 20px;
-    width: 150px;
-    height: 200px;
-}
-
-.overlay-inner .inner-box h1{
-    font-weight: 600;
-    font-size: 1.8rem;
+.overlay-inner .inner-box img {
+	margin-right: 20px;
+	width: 150px;
+	height: 200px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.overlay-inner .inner-box h3{
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: var(--secondaryBlue);
+.overlay-inner .inner-box h1 {
+	font-weight: 600;
+	font-size: 1.8rem;
 }
-.overlay-inner .inner-box h4{
-    font-size: 1.2rem;
-    color: var(--primaryBlue);
+
+.overlay-inner .inner-box h3 {
+	font-size: 1.2rem;
+	margin-top: 10px;
+	color: var(--secondaryBlue);
 }
-.overlay-inner .inner-box button{
-    outline: none;
-    border: none;
-    width: 100px;
-    border-radius: 5px;
-    background-color: #24a0ed;
-    color: white;
-    font-weight: bold;
-    padding: 0.3rem 0.5rem;
+.overlay-inner .inner-box h4 {
+	font-size: 1.2rem;
+	color: var(--primaryBlue);
 }
-.overlay-inner .description{
-    text-align: justify;
-    font-size: 13px;
+.overlay-inner .inner-box button {
+	outline: none;
+	border: none;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #24a0ed;
+	color: white;
+	font-weight: bold;
+	padding: 0.3rem 0.5rem;
+}
+.overlay-inner .description {
+	text-align: justify;
+	font-size: 13px;
 }
 
 .detailBtn {
-    width: fit-content;
-    background-color: transparent;
-    color: #fff;
-    padding-left: 0.4rem;
-    cursor: pointer;
-    border: none;
+	width: fit-content;
+	background-color: transparent;
+	color: #fff;
+	padding-left: 0.4rem;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	bottom: 0.4rem;
 }
 
 .detailBtn p {
-    color: #e1e1e1;
-    text-decoration: underline;
-    padding: 0;
-    margin: 0;
-    font-size: 0.9rem;
+	color: var(--darkBlue);
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9rem;
 }
 
 .detailBtn:active {
-    cursor: default;
+	cursor: default;
 }
