@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Css/SearchStyle.css";
-import library from "../Images/library.png";
+import Bookshelf from "../Images/book_shelf.png";
 import Card from "./SearchComponent/Card";
 import axios from "axios";
 
@@ -18,12 +18,12 @@ const Search = () => {
 			.then((res) => setData(res.data.items))
 			.catch((err) => console.log(err));
 	};
-	
+
 	const searchOnEnter = (evt) => {
 		if (evt.key === "Enter") {
 			searchBook();
 		}
-	}
+	};
 
 	return (
 		<>
@@ -39,7 +39,7 @@ const Search = () => {
 						/>
 						<button onClick={searchBook}>Search</button>
 					</div>
-					<img src={library} alt="library" className="library" />
+					<img src={Bookshelf} alt="Bookshelf" className="library" />
 				</div>
 				<div class="container overflow-hidden search__result">
 					<div class="row gy-5">{<Card book={bookData} />}</div>

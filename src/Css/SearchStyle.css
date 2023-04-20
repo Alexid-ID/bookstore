@@ -56,6 +56,7 @@
 	position: absolute;
 	top: 0;
 	z-index: 0;
+    filter: brightness(0.4);
 }
 
 .search__result {
