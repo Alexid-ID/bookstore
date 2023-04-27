@@ -7,7 +7,7 @@
 
 .search__container {
 	position: relative;
-	height: 60vh;
+	height: calc(80vh - 72px);
 	width: 100%;
 }
 
@@ -26,18 +26,18 @@
 
 .search input {
 	width: 100%;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
 }
 
 .search button {
 	background-color: var(--secondaryBlue);
 	color: #fff;
-	border-radius: 5px;
+	border-radius: 0 5px 5px 0;
+	border: none;
 	padding: 10px;
-	margin-left: 10px;
 	cursor: pointer;
 }
 
@@ -50,18 +50,16 @@
 }
 
 .search__container img {
-	height: 60vh;
+	height: calc(80vh - 72px);
 	width: 100%;
-	filter: brightness(0.6);
+	object-fit: cover;
 	position: absolute;
 	top: 0;
 	z-index: 0;
-    filter: brightness(0.4);
 }
 
 .search__result {
 	z-index: 2;
-	padding: 2rem;
 }
 
 .book__card {

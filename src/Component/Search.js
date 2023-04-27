@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../Css/SearchStyle.css";
-import Bookshelf from "../Images/book_shelf.png";
 import Card from "./SearchComponent/Card";
 import axios from "axios";
 
@@ -38,9 +37,9 @@ const Search = () => {
 						/>
 						<button onClick={searchBook}>Search</button>
 					</div>
-					<img src={Bookshelf} alt="Bookshelf" className="library" />
+					<img src={require("../Images/book_search.jpg")} alt="Bookshelf" className="library" />
 				</div>
-				<div class="container overflow-hidden search__result">
+				<div class="container overflow-hidden search__result my-5">
 					<div class="row gy-5">{<Card book={bookData} />}</div>
 				</div>
 			</div>
