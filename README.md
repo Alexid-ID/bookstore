@@ -1,6 +1,8 @@
 # Web demo SPA - BOOK FINDER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+
+Book's data from: [Google Books APIs](https://developers.google.com/books/docs/overview). 
 
 ## Run project: 
 
