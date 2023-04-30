@@ -14,7 +14,7 @@ const About = () => {
 								<div className="ms-2 me-auto">
 									<div className="fw-bold">
 										“The more that you read, the more things you will know. The more that you learn,
-										the more places you’ll go.”
+										the more places you'll go.”
 									</div>
 									―Dr. Seuss, I Can Read With My Eyes Shut!
 								</div>

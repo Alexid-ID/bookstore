@@ -14,7 +14,7 @@ const HomePage = () => {
 							Find the <strong style={{ color: "rgb(0, 151, 254)" }}>book</strong>
 						</h1>
 						<h1>
-							your are looking
+							you are looking
 							<br />
 							for <span style={{ color: "red" }}>easier</span> to read.
 						</h1>
@@ -43,7 +43,7 @@ const HomePage = () => {
 			<div className="container ad--container">
 				<div className="row gy-5">
 					<div className="ad--holder col-4">
-						<img src={require("../Images/tax-free.png")} />
+						<img src={require("../Images/tax-free.png")} alt="free" />
 						<div className="ad--content">
 							<h1>Free</h1>
 							<p>Get your first book for free</p>
