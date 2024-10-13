@@ -18,4 +18,4 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ## Contributor: 
-Đặng Thị Minh Thư - 52100843
+Đặng Thị Minh Thư
